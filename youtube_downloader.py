@@ -3,7 +3,8 @@ from yt_dlp import YoutubeDL
 
 def download_youtube_content(url, type_download="audio", progress_callback=None):
     # Directorio base para organizar música y videos
-    base_dir = "./../../../Documents/Music"
+    # base_dir = "./../../../Documents/Music"
+    base_dir = "./../../../Downloads/canciones"
     all_music_dir = os.path.join(base_dir, "allMusic")
     all_videos_dir = os.path.join(base_dir, "Videos")
     os.makedirs(all_music_dir, exist_ok=True)
